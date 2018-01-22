@@ -145,7 +145,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 														 </div>					
 													 </li>
 													 <li  class="span1_of_1 center" style="display:flex;justify-content:center;margin-top:20px;">
-														 <div class="dropdown" >
+														 <div class="dropdown glyphicon glyphicon-arrow-down" >
 															<button type="button" class="btn btn-primary dropdown-toggle" style="background-color:transparent;border:none;border-radius:0%; border-bottom:1px solid white	" data-toggle="dropdown"> Dropdown button </button>
   																
   																<div class="dropdown-menu" >
