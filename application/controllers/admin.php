@@ -65,7 +65,12 @@ class Admin extends CI_Controller
 		);
 
 		$this->data_crud->update_datarute($where,$data,'rute');
-		redirect('admin/rute');
+		redirect('admin/data_rute');
+	}
+
+	function data_rute(){
+		$data['rute'] = $this->data_crud->tampil_datarute()->result();
+		$this->load->view('v_data_rute',$data);	
 	}
 }
  ?>
