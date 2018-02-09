@@ -1,470 +1,109 @@
-<!--
-	Author: W3layouts
-	Author URL: http://w3layouts.com
-	License: Creative Commons Attribution 3.0 Unported
-	License URL: http://creativecommons.org/licenses/by/3.0/
--->
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<title>Tourism a Travel Category Flat bootstrap Responsive website Template</title>
-<!-- Meta tag Keywords -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Tourism web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+	<title>Book My Trip Flat Responsive Widget Template :: w3layouts</title>
+	<!-- custom-theme -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Book My Trip web template Responsive, Login form web template,Flat Pricing tables,Flat Drop downs  Sign up Web Templates, Flat Web Templates, Login sign up Responsive web template, SmartPhone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
 function hideURLbar(){ window.scrollTo(0,1); } </script>
-<!--// Meta tag Keywords -->
-<!-- css files -->
-<link rel="stylesheet" href="assets/frontend/css/bootstrap.css"> <!-- Bootstrap-Core-CSS -->
-<link rel="stylesheet" href="assets/frontend/css/style.css" type="text/css" media="all" /> <!-- Style-CSS --> 
-<link rel="stylesheet" href="assets/frontend/css/font-awesome.css"> <!-- Font-Awesome-Icons-CSS -->
-<!-- //css files -->
-<!-- online-fonts -->
-<link href="assets/frontend/fonts/Coda-ExtraBold.ttf" rel="stylesheet">
-<link href="" rel="stylesheet">
-<!-- //online-fonts -->
+<!-- //custom-theme -->
+<script type="text/javascript" src="assets/frontend/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="assets/frontend/js/bootstrap.js"></script>
+<!-- stylesheet -->
+<link rel="stylesheet" type="text/css" href="assets/frontend/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="assets/frontend/css/bootstrap.min.css">
+
+<style type="text/css">
+<?php
+include("assets/frontend/css/style.css");
+?>
+</style>
+
+<link href="//fonts.googleapis.com/css?family=Asap:400,400i,500,500i,700,700i" rel="stylesheet">
+<!-- //stylesheet -->
 </head>
-<body> 
-<div class="main-agile">
-	<!-- banner -->
-	<div id="home" class="w3ls-banner"> 
-		<!-- banner-text -->
-		<div class="w3layouts-banner-top">
-			<div class="container">
-				<div class="agileits-banner-info">
-					<div class="rw-wrapper">
-				<div class="rw-sentence">
-					<div class="rw-words rw-words-1">
-						<span style="font-weight:bold;">Nikmati Perjalanan yang Menyenangkan</span>
-					</div>
-					<div class="rw-words rw-words-2">
-						<span>Bergabunglah bersama kami,dengan perjalanan <br> yang sesungguhnya</span>
-					</div>
-				</div>
-			</div>
-				</div>	
-				<div class="sap_tabs">	
-					<div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
-						<ul class="resp-tabs-list">
-							<li class="resp-tab-item grid1"><span><i class="glyphicon glyphicon-home" aria-hidden="true"></i>Hotels</span></li>
-							<li class="resp-tab-item grid2"><span><i class="glyphicon glyphicon-plane" aria-hidden="true"></i>Flights</span></li>
-						</ul>				  	 
-						<div class="resp-tabs-container">
-							<div class="tab-1 resp-tab-content">
-								<div class="facts">
-									<form action="#" method="post">
-										<div class="reservation">
-											<ul>		
-												<li  class="span1_of_1 desti">
-													 <div class="book_date">
-															<span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
-															<input type="text" placeholder="Departure City or Hotel" class="typeahead1 input-md form-control tt-input" required="">
-														
-													 </div>					
-												 </li>
-											</ul>
-										</div>
-										<div class="reservation">
-											<ul>	
-												 <li  class="span1_of_1">
-													 <h5>Check In</h5>
-													 <div class="book_date">
-													<div class="book_date">
-															<span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
-															<input  id="datepicker" name="date" type="text" value="mm/dd/yyyy" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}" required="">
-														 
-													</div>	
-													 </div>		
-												 </li>
-												 <li  class="span1_of_1 left">
-													 <h5>Check Out</h5>
-													 <div class="book_date">
-															<span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
-															<input  id="datepicker" name="date" type="text" value="mm/dd/yyyy" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}" required="">
-														
-													 </div>					
-												 </li>
-											</ul>
-										</div>
-										<div class="reservation w3l-submit">
-											<ul>	
-												 <li class="span1_of_3">
-														<div class="date_btn">
-																<input type="submit" value="Submit" />
-														</div>
-												 </li>
-											</ul>
-										</div>
-									</form>
-								<div class="clearfix"></div>
-								</div>
-							</div>
-							<div class="tab-1 resp-tab-content">
-								<div class="facts">
-									<form action="#" method="post">
-										<div class="flights">
-											<div class="reservation">
-												<ul>		
-													<li  class="span1_of_1 desti1">
-														 <div class="book_date">
-															
-																<span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
-																<input type="text" placeholder="From" class="typeahead1 input-md form-control tt-input" required="">
-															
-														 </div>					
-													 </li>
-													 <li  class="span1_of_1 desti1">
-														 <div class="book_date">
-														
-																<span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
-																<input type="text" placeholder="To" class="typeahead1 input-md form-control tt-input" required="">
-															
-														 </div>					
-													 </li>
-												</ul>
-											</div>
-											<div class="reservation">
-												<ul>	
-													 <li  class="span1_of_1">
-														 <h5>Departure</h5>
-														 <div class="book_date">
-														
-															<span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
-															<input  id="datepicker" name="date" type="text" value="mm/dd/yyyy" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}" required="">
-														
-														 </div>		
-													 </li>
-													 <li  class="span1_of_1 left">
-														 <h5>Return</h5>
-														 <div class="book_date">
-														
-															<span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
-															<input  id="datepicker" name="date" type="text" value="mm/dd/yyyy" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}" required="">
-													
-														 </div>					
-													 </li>
-													 <li  class="span1_of_1 center" style="display:flex;justify-content:center;margin-top:20px;">
-														 <div class="dropdown glyphicon glyphicon-arrow-down" >
-															<button type="button" class="btn btn-primary dropdown-toggle" style="background-color:transparent;border:none;border-radius:0%; border-bottom:1px solid white	" data-toggle="dropdown"> Dropdown button </button>
-  																
-  																<div class="dropdown-menu" >
-    																<a class="dropdown-item" href="#">Link 1</a>
-    																<a class="dropdown-item" href="#">Link 2</a>
-    																<a class="dropdown-item" href="#">Link 3</a>
-  
-  																</div>
-  																												
-														 </div>					
-													 </li>
-												</ul>
-											</div>
-											<div class="reservation w3l-submit">	
-												<ul>	
-													 <li class="span1_of_3">
-															<div class="date_btn">
-															
-																	<input type="submit" value="Search Flights" />
-															
-															</div>
-													 </li>
-												</ul>
-											</div>
-										</div>
-									</form>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>			
-</div>
-<!-- //banner-text -->
-<!-- //banner --> 
-<!-- header -->
-<div class="header-w3layouts"> 
-	<!-- Navigation -->
-	<nav class="navbar navbar-default">
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-				<span class="sr-only">Tourism</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-		</div> 
-		<div class="logo-agile-1"> 
-			<h1><a class="logo" href="index.html"><i class="fa fa-plane" aria-hidden="true"></i>Tourism</a></h1>
-		</div> 
-		<!-- Collect the nav links, forms, and other content for toggling -->
-		<div class="collapse navbar-collapse navbar-ex1-collapse"  style="float:right; margin-right:60px; margin-top:10px;">
-			<ul class="nav navbar-nav navbar-right">
-				<!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-				<li class="active"><a href="index.html">Home</a></li>
-				<li><a class="" href="services.html">Services</a></li>
-				<li><a class="" href="gallery.html">Gallery</a></li>
-				<li><a class="" href="contact.html">Contact Us</a></li>
-			</ul>
-		</div>
-		<!-- //navbar-collapse -->
-	</nav>  
-	<div class="clearfix"> </div>
-</div>	
-<!-- //header -->
-<!-- welcome -->
-<div class="about w3layouts-agileinfo">
+<body class="bg agileinfo">
+
+	<div class="Jumbotron button">
+		<button type="button" class="btn btn-primary"><a href=""></a>Log In</button>
+		<button type="button" class="btn" style="background-color: transparent; color:white; border:1px solid;	"><a href=""></a>Sign Up</button>
+	</div>
+
+
+	<h1 class="agile_head text-justify">Pesan Perjalananmu</h1>
+	<p class="text-justify"">Fusce turpis  nisi aliquam facilisis elit.</p>
 	<div class="container">
-		<div class="about-top w3ls-agile">
-			<div class="col-md-6 red-w3l">
-				<img class="img-responsive" src="assets/frontend/images/well2.jpg" alt="">
-				<img class="img-responsive" src="assets/frontend/images/well.jpg" alt="">
-				<div class="position-w3l"></div>
-			</div>
-			<div class="col-md-6 come">
-				<div class="about-wel">
-					<h5>Welcome To Our Tourism</h5>
-					<p>Masagni dolores eoquie int Basmodi temporant, nicmquam eius, Basmodi temurer sehsMunim.</p>
-					<p>Basmodi temporant, ut laboreas dolore magnam kuytase uaeraquis autem vel eum iure reprehend.Unicmquam eius, Basmodi temurer sehsMunim.</p>
-				</div>
-				<div class="steps-wel">
-					<h5>Follow Us For Easy Steps</h5>
-					<div class="col-md-3 col-sm-3 col-xs-3 w3ls_banner_bottom_grids first-posi-w3l">
-						<div class="w3l_banner_bottom_grid1">
-							<i class="fa fa-phone hvr-pulse-shrink" aria-hidden="true"></i>
+		<div class="row">
+			<div class="col-md-6">
+				<form action="<?php echo base_url('frontend/carirute')?>" method="post" class="agile_form">
+					<div class="row section_class_agileits sec-left">
+						<input type="text" class="name" name="from" id="text" placeholder="Keberangkatan" style="border-radius: 5px;" required="">
+					</div>
+					<div class="section_class_agileits sec-right">
+						<input type="text" class="name" name="to" id="text" placeholder="Tujuan" style="border-radius: 5px;" required="">
+					</div>
+					<input placeholder="Date" class="date" id="datepicker" type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" style="border-radius: 5px;" />
+					<div class="list_agileits_w3layouts">
+						<div class="section_class_agileits sec-left">
+							<select>
+								<option value="0">Destination City</option>
+								<option value="1">city1</option>
+								<option value="2">city2</option>
+								<option value="3">city3</option>
+								<option value="4">city4</option>
+							</select>
 						</div>
-						<div class="w3l_banner_bottom_grid1">
-							<i class="fa fa-users hvr-pulse-shrink" aria-hidden="true"></i>
+						<div class="section_class_agileits sec-right">
+							<select>
+								<option value="0">select class</option>
+								<option value="1">Any</option>
+								<option value="3">Economy Class</option>
+								<option value="2"> Business Class</option>
+								<option value="1">First Class</option>
+							</select>
+						</div>	
+						<div class="clear"></div>
+					</div>	
+					<div class="list_agileits_w3layouts">
+						<div class="section_class_agileits sec-left">
+							<select>
+								<option value="0">Adults</option>
+								<option value="1">0</option>
+								<option value="2">1</option>
+								<option value="3"> 2</option>
+								<option value="4">3 or 3+</option>
+							</select>
+						</div>	
+						<div class="section_class_agileits sec-right">
+							<select>
+								<option value="0">Children</option>
+								<option value="1">0</option>
+								<option value="2">1</option>
+								<option value="3"> 2</option>
+								<option value="4">3 or 3+</option>
+							</select>
 						</div>
-						<div class="w3l_banner_bottom_grid1">
-							<i class="fa fa-map-marker hvr-pulse-shrink" aria-hidden="true"></i>
-						</div>
-					</div>
-					<div class="col-md-2 col-sm-2 col-xs-2 w3ls_banner_bottom_grids">
-						<h6>01</h6>
-						<h6>02</h6>
-						<h6>03</h6>
-					</div>
-					<div class="col-md-7 col-sm-7 col-xs-7 w3ls_banner_bottom_grids">
-						<p>Masagni dolores eoquie int Basmodi Basmodi temurer.</p>
-						<p>Masagni dolores eoquie int Basmodi Basmodi temurer.</p>
-						<p>Masagni dolores eoquie int Basmodi Basmodi temurer.</p>
-					</div>
-					<div class="clearfix"> </div>
-				</div>
+						<div class="clear"></div>
+					</div>				
+					<div class="submit">
+						<input type="submit" value="search">
+					</div>  
+				</form>
 			</div>
-			<div class="clearfix"> </div>
 		</div>
-	</div>
-</div>
-<!-- //welcome -->
-<!-- stats -->
-<div class="stats">
-	<div class="container">
-		<div class="stats-info">
-			<div class="col-md-3 col-sm-3 stats-grid slideanim">
-				<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='1200' data-delay='.5' data-increment="1">1200</div>
-				<h4 class="stats-info">CUSTOMERS</h4>
-			</div>
-			<div class="col-md-3 col-sm-3 stats-grid slideanim">
-				<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='3000' data-delay='.5' data-increment="1">3000</div>
-				<h4 class="stats-info">DESTINATIONS</h4>
-			</div>
-			<div class="col-md-3 col-sm-3 stats-grid slideanim">
-				<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='9000' data-delay='.5' data-increment="10">9000</div>
-				<h4 class="stats-info">TOURS</h4>
-			</div>
-			<div class="col-md-3 col-sm-3 stats-grid slideanim">
-				<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='169' data-delay='.5' data-increment="1">169</div>
-				<h4 class="stats-info">TOUR TYPES</h4>
-			</div>
-			<div class="clearfix"></div>
-		</div>
-	</div>
-</div>
-<!-- //stats -->
-<!-- Popular -->
-<div class="albums">
-	<div class="container">
-		<h3 class="agile-title">MOST POPULAR</h3> 
-		<div class="w3layouts_header">
-			<p><span><i class="fa fa-plane sub-w3l" aria-hidden="true"></i></span></p>
-		</div>
-		<div class="col-md-6 w3lsalbums-grid">
-			<div class="albums-left"> 
-				<div class="wthree-almub">  
-				</div>
-			</div>
-			<div class="albums-right">
-				<h4>Dolor Sit</h4>
-				<p>Nsatolernatur auts oditaut miertase vertas.Measnseqe ustur magni dolores eoqus ratione voluptate.</p>
-				<a class="w3more" href="services.html"><i class="fa fa-mail-forward" aria-hidden="true"></i> More</a>
-			</div>
-			<div class="clearfix"></div>
-		</div>
-		<div class="col-md-6 w3lsalbums-grid">
-			<div class="albums-left"> 
-				<div class="wthree-almub wthree-almub2"> 
-				</div> 
-			</div>
-			<div class="albums-right">
-				<h4>Consequat</h4>
-				<p>Nsatolernatur auts oditaut miertase vertas.Measnseqe ustur magni dolores eoqus ratione voluptate.</p>
-				<a class="w3more" href="services.html"><i class="fa fa-mail-forward" aria-hidden="true"></i> More</a>
-			</div>
-			<div class="clearfix"></div>
-		</div>  
-		<div class="col-md-6 w3lsalbums-grid">
-			<div class="albums1-right"> 
-				<div class="wthree-almub wthree-almub3">  
-				</div>
-			</div>
-			<div class="albums1-left">
-				<h4>Dolores Btrs</h4>
-				<p>Nsatolernatur auts oditaut miertase vertas.Measnseqe ustur magni dolores eoqus ratione voluptate.</p>
-				<a class="w3more" href="services.html"><i class="fa fa-mail-forward" aria-hidden="true"></i> More</a>
-			</div> 
-			<div class="clearfix"></div>
-		</div>
-		<div class="col-md-6 w3lsalbums-grid">
-			<div class="albums1-right"> 
-				<div class="wthree-almub wthree-almub4">  
-				</div>
-			</div>
-			<div class="albums1-left">
-				<h4>Nam aliquam</h4>
-				<p>Nsatolernatur auts oditaut miertase vertas.Measnseqe ustur magni dolores eoqus ratione voluptate.</p>
-				<a class="w3more" href="services.html"><i class="fa fa-mail-forward" aria-hidden="true"></i> More</a>
-			</div> 
-			<div class="clearfix"></div>
-		</div>
-		<div class="clearfix"></div> 
-	</div>
-</div>
-<!-- //Popular --> 
-<!-- footer -->
-<footer>
-	<div class="agileinfo-footer">
-		<div class="container">
-			<div class="agileits-footer-top">
-				<div class="col-sm-4 w3ls-address-grid">
-					<i class="glyphicon glyphicon-map-marker"></i>
-					<div class="w3-address1">
-						<p>Lorem ipsum dolor,
-						TL 19034-88974</p>
-					</div>
-					<div class="clearfix"> </div>
-				</div>
-				<div class="col-sm-4 w3ls-address-grid">
-					<i class="glyphicon glyphicon-phone"></i>
-					<div class="w3-address1">
-						<p>+012 345 6789</p>
-					</div>
-					<div class="clearfix"> </div>
-				</div>
-				<div class="col-sm-4 w3ls-address-grid">
-					<i class="glyphicon glyphicon-envelope"></i>
-					<div class="w3-address1">
-						<p><a href="mailto:info@example.com"> mail@example.com</a></p>
-					</div>
-					<div class="clearfix"> </div>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-			<!-- newsletter -->
-			<div class="w3layouts-newsletter">
-				<div class="col-md-5 wthree-join">
-					<h2><i class="fa fa-envelope" aria-hidden="true"></i>Join our Newsletter</h2>
-				</div>
-				<div class="col-md-7 agileinfo-newsletter">
-					<form action="#" method="post">
-						<input type="email"	placeholder="Enter Your Email" name="email" required="" />
-						<input type="submit" value="Subscribe">
-					</form>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-			<!-- //newsletter -->
-			<!-- Counter -->
-			<div class="services-bottom">
-				<div class="counter-agile">
-					<div class="counter-subw3l">
-						<p><a href="index.html"><i class="fa fa-plane" aria-hidden="true"></i>Perjalanan</a></p>
-					</div>
-					<div class="ftr-menu">
-						 <ul>
-							<li><a class="active" href="index.html">Home </a></li>
-							<li><a class="" href="services.html">Services</a></li>
-							<li><a class="" href="gallery.html">Gallery</a></li>
-							<li><a class="" href="typography.html">Typography</a></li>
-							<li><a class="" href="contact.html">Contact Us</a></li>
-						 </ul>
-					</div>
-					<div class="counter-subw3l w3l-right-footer">
-						<ul class="w3layouts-agileits-social">
-							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-							<li><a href="#"><i class="fa fa-rss"></i></a></li>
-							<li><a href="#"><i class="fa fa-vk"></i></a></li>
-						</ul>
-						<div class="clearfix"> </div>
-					</div>
-					<div class="clearfix"> </div>
-				</div>
-			</div>
-			<!-- //Counter -->
-		</div>
-		<div class="agileits-footer-bottom">
-			<p class="footer-class">&copy; 2017 Kereta Tiket. All Rights Reserved | Design by  Dicky Indrayan </p>
-		</div>
-	</div>
-</footer>
-<!-- //footer -->
-<!-- js-scripts -->			
-	<!-- js -->
-	<script type="text/javascript" src="assets/frontend/js/jquery-2.1.4.min.js"></script>
-	<script type="text/javascript" src="assets/frontend/js/bootstrap.js"></script> <!-- Necessary-JavaScript-File-For-Bootstrap --> 
-	<!-- //js -->
-	<!-- start-smoth-scrolling -->
-	<script type="text/javascript" src="assets/frontend/js/move-top.js"></script>
-	<script type="text/javascript" src="assets/frontend/js/easing.js"></script>
-	<script type="text/javascript">
-		jQuery(document).ready(function($) {
-			$(".scroll").click(function(event){		
-				event.preventDefault();
-				$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-			});
-		});
-	</script>
-	<!-- start-smoth-scrolling -->
-	<!-- smooth scrolling -->
-	<script src="assets/frontend/js/SmoothScroll.min.js"></script>
-	<!-- //smooth scrolling -->
-	<!-- Easy Responsivetabs -->
-	<script src="assets/frontend/js/easyResponsiveTabs.js" type="text/javascript"></script>
-	<script type="text/javascript">
-		$(document).ready(function () {
-			$('#horizontalTab').easyResponsiveTabs({
-				type: 'default', //Types: default, vertical, accordion           
-				width: 'auto', //auto or any width like 600px
-				fit: true   // 100% fit in a container
-			});
-		});
-	</script>
-	<!-- //Easy Responsivetabs -->
-	<!-- strat-date-piker -->
+
+
+	</div>	
+	<!--start-date-piker-->
 	<link rel="stylesheet" href="assets/frontend/css/jquery-ui.css" />
 	<script src="assets/frontend/js/jquery-ui.js"></script>
-	  <script>
-			  $(function() {
-				$( "#datepicker,#datepicker1" ).datepicker();
-			  });
-	  </script>
-	<!-- //End-date-piker -->
-	<!-- Numscroller -->
-	<script type="text/javascript" src="assets/frontend/js/numscroller-1.0.js"></script>
-	<!-- //Numscroller -->
-<!-- //js-scripts -->
+	<script>
+		$(function() {
+			$( "#datepicker,#datepicker1" ).datepicker();
+		});
+	</script>
+	<!-- /End-date-piker -->		
 </body>
 </html>

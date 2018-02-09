@@ -13,7 +13,7 @@
 <!--main-->
 <?php $status = $this->session->userdata('status');
  echo $status; ?>
-<div class="container" style="display: flex;justify-content: center; margin-top:120px;">
+<div class="container" style="display: flex;justify-content: center; margin-top:120px; ">
 <div class="jumbotron col-md-5" >
 		<form action="<?php echo base_url('auth/cek_login'); ?>" method="post">
 		<center><h3 style="border: none; border-bottom: 2px solid black; border-radius: 1px; line-height: 45px;">Dashboard Login</h3></center><br>

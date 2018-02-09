@@ -488,7 +488,7 @@ a:focus {
 }
 .user-panel > .image > img {
   width: 100%;
-  max-width: 45px;
+  max-width: 30px;
   height: auto;
 }
 .user-panel > .info {

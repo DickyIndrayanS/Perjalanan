@@ -10,7 +10,6 @@
  	$this->load->model('data_login');
  	}
 
-
  	function index(){
  		$status = $this->session->userdata("status");
  		if($status == "login"){
@@ -32,7 +31,7 @@
 		 			'nama' => $username,
 		 			'status' => "login"
 		 		);
-		 		$this->session->get_userdata($data_session);
+		 		$this->session->set_userdata($data_session);
 		 		redirect(base_url());
 		 	} else  {
 		 		echo "<script type='text/javascript'>

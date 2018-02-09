@@ -22,4 +22,22 @@ class Frontend extends CI_Controller {
 	{
 		$this->load->view('tampilan');
 	}
+
+	function __construct()
+	{
+		parent::__construct();
+		$this->load->model('data_crud');
+	}
+
+	function carirute()
+	{
+		$from=$this->input->post('from');
+		$to=$this->input->post('to');
+		$query=$this->data_crud->join_rutemaskapai($from,$to);
+		$data['rute'] = null;
+		if($query){
+			$data['rute'] = $query;
+		}
+		$this->load->view('v_client_rute',$data);
+	}
 }

@@ -251,13 +251,13 @@
     <!-- User Account: style can be found in dropdown.less -->
     <li class="dropdown user user-menu">
       <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-        <img src="assets/adminlte/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+        <img src="assets/adminlte/dist/img/owl.jpg" class="user-image" alt="User Image">
         <span class="hidden-xs">Dicky Indrayan</span>
       </a>
       <ul class="dropdown-menu">
         <!-- User image -->
         <li class="user-header">
-          <img src="assets/adminlte/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+          <img src="assets/adminlte/dist/img/owl.jpg" class="img-circle" alt="User Image">
 
           <p>
             Dicky Indrayan - Web Developer
@@ -327,24 +327,43 @@
     <!-- sidebar menu: : style can be found in sidebar.less -->
     <ul class="sidebar-menu" data-widget="tree">
       <li class="header">MAIN NAVIGATION</li>
+
+      <li class="treeview">
+        <a href="<?php echo base_url('admin/index'); ?>">
+          <i class="fa fa-dashboard"></i>
+          <span>Dashboard</span>
+        </a>
+      </li>
+
       <li class="treeview">
         <a href="<?php echo base_url('admin/rute'); ?>">
-          <i class="glyphicon glyphicon-road"></i>
-          <span>Rute</span>
+          <i class="fa fa-database  "></i>
+          <span>Manage</span>
           <span class="pull-right-container">
             <i class="fa fa-angle-left pull-right"></i>
           </span>
         </a>
         <ul class="treeview-menu">
-          <li><a href="<?php echo base_url('admin/data_rute'); ?>"><i class="fa fa-user""></i> User</a></li>
-          <li><a href="<?php echo base_url('admin/rute'); ?>"><i class="fa fa-edit""></i> Form</a></li>
+          <li><a href="<?php echo base_url('admin/data_rute'); ?>"><i class="glyphicon glyphicon-road"></i>Rute</a></li>
+          <li><a href="<?php echo base_url('admin/data_maskapai'); ?>"><i class="glyphicon glyphicon-plane"></i>Maskapai</a></li>
+          <li><a href=""><i class="glyphicon glyphicon-bookmark"></i>Reservasi</a></li>
+          <li><a href="<?php echo base_url('admin/data_bandara'); ?>"><i class="glyphicon glyphicon-compressed"></i>Bandara</a></li>
         </ul>
       </li>
 
       <li class="treeview">
-        <a href="#">
-          <i class="fa fa-plane"></i>
-          <span>Maskapai</span>
+        <a href="<?php echo base_url('admin/rute'); ?>">
+          <i class="fa fa-plus"></i>
+          <span>Create</span>
+          <span class="pull-right-container">
+            <i class="fa fa-angle-left pull-right"></i>
+          </span>
+          <ul class="treeview-menu">
+            <li><a href="<?php echo base_url('admin/rute'); ?>"><i class="glyphicon glyphicon-road"></i>Rute</a></li>
+            <li><a href="<?php echo base_url('admin/maskapai'); ?>"><i class="glyphicon glyphicon-plane"></i>Maskapai</a></li>
+            <li><a href=""><i class="glyphicon glyphicon-bookmark"></i>Reservasi</a></li>
+            <li><a href="<?php echo base_url('admin/bandara'); ?>"><i class="glyphicon glyphicon-compressed"></i>Bandara</a></li>
+          </ul>
         </a>
 
       </li>
@@ -435,13 +454,6 @@
     <!-- /.row -->
   </div>
   <!-- /.content-wrapper -->
-  <footer class="main-footer">
-    <div class="pull-right hidden-xs">
-      <b>Version</b> 2.4.0
-    </div>
-    <strong>Copyright &copy; 2018<a href="https://adminlte.io">Dicky Indrayan S</a>.</strong> All rights
-    reserved.
-  </footer>
 
 </div>
 <!-- ./wrapper -->

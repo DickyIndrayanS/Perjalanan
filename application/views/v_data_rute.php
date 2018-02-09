@@ -300,7 +300,7 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
             <a href="#" class="btn btn-default btn-flat">Profile</a>
           </div>
           <div class="pull-right">
-            <a href="#" class="btn btn-default btn-flat">Sign out</a>
+            <a href="<?php echo base_url('auth/logout');?>" class="btn btn-default btn-flat">Sign out</a>
           </div>
         </li>
       </ul>
@@ -341,26 +341,45 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
     <!-- sidebar menu: : style can be found in sidebar.less -->
     <ul class="sidebar-menu" data-widget="tree">
       <li class="header">MAIN NAVIGATION</li>
+
+      <li class="treeview">
+        <a href="<?php echo base_url('admin/index'); ?>">
+          <i class="fa fa-dashboard"></i>
+          <span>Dashboard</span>
+        </a>
+      </li>
+
       <li class="treeview">
         <a href="<?php echo base_url('admin/rute'); ?>">
-          <i class="fa fa-files-o"></i>
-          <span>Rute Perjalanan</span>
+          <i class="fa fa-database  "></i>
+          <span>Manage</span>
           <span class="pull-right-container">
             <i class="fa fa-angle-left pull-right"></i>
           </span>
         </a>
         <ul class="treeview-menu">
-          <li><a href="<?php echo base_url('admin/data_rute'); ?>"><i class="fa fa-user""></i> User</a></li>
-          <li><a href="<?php echo base_url('admin/rute'); ?>"><i class="fa fa-edit""></i> Form</a></li>
+          <li><a href="<?php echo base_url('admin/data_rute'); ?>"><i class="glyphicon glyphicon-road"></i>Rute</a></li>
+          <li><a href="<?php echo base_url('admin/data_maskapai'); ?>"><i class="glyphicon glyphicon-plane"></i>Maskapai</a></li>
+          <li><a href=""><i class="glyphicon glyphicon-bookmark"></i>Reservasi</a></li>
+          <li><a href=""><i class="glyphicon glyphicon-compressed"></i>Bandara</a></li>
         </ul>
       </li>
 
       <li class="treeview">
-        <a href="#">
-          <i class="fa fa-plane"></i>
-          <span>Maskapai</span>
+        <a href="<?php echo base_url('admin/rute'); ?>">
+          <i class="fa fa-plus"></i>
+          <span>Create</span>
+          <span class="pull-right-container">
+            <i class="fa fa-angle-left pull-right"></i>
+          </span>
+          <ul class="treeview-menu">
+            <li><a href="<?php echo base_url('admin/rute'); ?>"><i class="glyphicon glyphicon-road"></i>Rute</a></li>
+            <li><a href="<?php echo base_url('admin/maskapai'); ?>"><i class="glyphicon glyphicon-plane"></i>Maskapai</a></li>
+          </ul>
         </a>
+
       </li>
+    </ul>
       
     </li>
   </ul>
@@ -375,11 +394,8 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
       <div class="col-md-12">
         <!-- Content Header (Page header) -->
         <div class="box">
-          <div class="box-header">
-            <h3 class="box-title">Data Table With Full Features</h3>
-          </div>
-          <!-- /.box-header -->
           <div class="box-body">
+            <a class="btn btn-primary" href="<?php echo base_url('admin/rute'); ?>" style="margin-bottom: 10px;"><i class="fa fa-plus"> Tambah</i></a>
             <table id="example1" class="table table-bordered table-striped">
               <thead>
                 <tr>
@@ -403,8 +419,8 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
                   <td><?php echo $s->rute_to?></td>
                   <td><?php echo $s->price ?></td>
                   <td>
-                    <a class="btn btn-danger" style="color:white; cursor: pointer;" title="" onclick="href='<?php echo base_url(('admin/hapus_rute/'.$s->id)); ?>'">Delete</a>
-                    <a class="btn btn-primary" style="color:white; cursor: pointer; " title="" onclick="href='<?php echo base_url(('admin/edit_rute/'.$s->id)); ?>'">Edit</a>
+                    <a class="btn btn-danger" style="color:white; cursor: pointer;" title="" onclick="href='<?php echo base_url(('admin/hapus_rute/'.$s->id)); ?>'"><i class="glyphicon glyphicon-trash"></i></a>
+                    <a class="btn btn-primary" style="color:white; cursor: pointer; " title="" onclick="href='<?php echo base_url(('admin/edit_rute/'.$s->id)); ?>'"><i class="glyphicon glyphicon-pencil"></i></a>
                   </td>
                 </tr>
                 <?php } ?>
