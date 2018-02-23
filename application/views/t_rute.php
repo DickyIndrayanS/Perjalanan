@@ -380,6 +380,7 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
           </div>
           <div class="box-body">
             <form action="<?php echo base_url('admin/proses_tambah'); ?>" method="post">
+
               <!-- Date dd/mm/yyyy -->
               <div class="bootstrap-timepicker">
                 <div class="form-group">
@@ -389,7 +390,7 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
                     <div class="input-group-addon">
                       <i class="fa fa-clock-o"></i>
                     </div>
-                    <input type="text" class="form-control timepicker" name="depart">
+                    <input type="datetime-local" class="form-control datepicker" name="depart">
                   </div>
                   <!-- /.input group -->
                 </div>
@@ -416,6 +417,11 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
                 <!-- /.input group -->
               </div>
               <!-- /.form group -->
+
+               <div class="form-group">
+                <label>Transportation Id :</label>
+                <input type="number" class="form-control" name="transportationid" required="true">
+              </div>
 
               <button type="submit" class="btn btn-primary btn-block">Submit</button>
             </form>

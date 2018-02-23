@@ -30,12 +30,14 @@ class Admin extends CI_Controller
 		$rute_from = $this->input->post('rutefrom');
 		$rute_to = $this->input->post('ruteto');
 		$price = $this->input->post('price');
+		$transportationid = $this->input->post('transportationid');
 
 		$data = array(
 			'depart_at' => $depart,
 			'rute_from' => $rute_from,
 			'rute_to' => $rute_to,
-			'price' => $price
+			'price' => $price,
+			'transportationid' => $transportationid
 		);
 		$this->data_crud->input_datarute($data,'rute');
 		redirect('admin/rute');

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Book My Trip Flat Responsive Widget Template :: w3layouts</title>
+	<title>Perjalanan</title>
 	<!-- custom-theme -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -24,86 +24,85 @@ include("assets/frontend/css/style.css");
 <link href="//fonts.googleapis.com/css?family=Asap:400,400i,500,500i,700,700i" rel="stylesheet">
 <!-- //stylesheet -->
 </head>
-<body class="bg agileinfo">
+<body>
+	<header>
+		<!-- Navbar -->
+		<div class="container">
+			<div class="navbar-header">
+				<a href="" class="navbar-brand"><span class="logo-text">Perjalanan</span></i></a>
+			</div>
+			<nav class="navbar navbar-default">
+				<ul class="navbar-right">
+					<li class="nav-item active"><a href="">Home</a></li>
+					<li><a href="">News</a></li>
+					<li><a href="">Contact</a></li>
+					<li><a href="">About</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="clear">
+		</div>
+		<!-- //Navbar -->
+	</header>
 
-	<div class="Jumbotron button">
-		<button type="button" class="btn btn-primary"><a href=""></a>Log In</button>
-		<button type="button" class="btn" style="background-color: transparent; color:white; border:1px solid;	"><a href=""></a>Sign Up</button>
+	<div class="container body-form">
+		<h1>Pesan Perjalanan Anda</h1>
+		<form action="<?php echo base_url('frontend/carirute?')?>" method="get" class="agile_form">
+			<div class="row">
+				<div class="section_class_agileits col-lg-2 col-md-2 col-sm-12" style="padding:5px;">
+					<label class="label-title">Asal</label>
+					<select>
+						<?php foreach ($from as $r) { ?>
+						<option><?php echo $r->rute_from ?></option>
+						<?php } ?>
+					</select>
+				</div>
+
+				<div class="section_class_agileits col-lg-2 col-md-2 col-sm-12" style="padding:5px;">
+					<label class="label-title">Tujuan</label>
+					<select>
+						<?php foreach ($to as $r) { ?>
+						<option><?php echo $r->rute_to ?></option>
+						<?php } ?>
+					</select>
+				</div>
+
+				<div class="col-lg-2 col-md-2 col-sm-12" style="padding:5px;">
+					<label class="label-title">Tanggal</label>
+					<input placeholder="Date" name="date" class="date" type="date" value="Date" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" />
+				</div>
+
+				<div class="section_class_agileits col-lg-2 col-md-2 col-sm-12" style="padding:5px;">
+					<label class="label-title">Jumlah</label>
+					<select name="penumpang">
+						<option value="0" disabled="true" selected="true">Jumlah</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+					</select>
+				</div>
+				<div class="submit col-lg-4 col-md-4 col-sm-4" style="padding:5px;">
+					<input type="submit" value="search">
+				</div>
+				<div class="clear"></div>
+			</div>
+		</form>				  
 	</div>
 
+	<!-- <div class="bottom-part">
+		<div class="container">
+			<div class="social-media">
+				<a href=""><i class="fb"></i></a>
+				<a href=""><i class="twitter"></i></a>
+				<a href=""><i class="youtube"></i></a>
+				<a href=""><i class="google"></i></a>
+			</div>
 
-	<h1 class="agile_head text-justify">Pesan Perjalananmu</h1>
-	<p class="text-justify"">Fusce turpis  nisi aliquam facilisis elit.</p>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-6">
-				<form action="<?php echo base_url('frontend/carirute')?>" method="post" class="agile_form">
-					<div class="row section_class_agileits sec-left">
-						<input type="text" class="name" name="from" id="text" placeholder="Keberangkatan" style="border-radius: 5px;" required="">
-					</div>
-					<div class="section_class_agileits sec-right">
-						<input type="text" class="name" name="to" id="text" placeholder="Tujuan" style="border-radius: 5px;" required="">
-					</div>
-					<input placeholder="Date" class="date" id="datepicker" type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" style="border-radius: 5px;" />
-					<div class="list_agileits_w3layouts">
-						<div class="section_class_agileits sec-left">
-							<select>
-								<option value="0">Destination City</option>
-								<option value="1">city1</option>
-								<option value="2">city2</option>
-								<option value="3">city3</option>
-								<option value="4">city4</option>
-							</select>
-						</div>
-						<div class="section_class_agileits sec-right">
-							<select>
-								<option value="0">select class</option>
-								<option value="1">Any</option>
-								<option value="3">Economy Class</option>
-								<option value="2"> Business Class</option>
-								<option value="1">First Class</option>
-							</select>
-						</div>	
-						<div class="clear"></div>
-					</div>	
-					<div class="list_agileits_w3layouts">
-						<div class="section_class_agileits sec-left">
-							<select>
-								<option value="0">Adults</option>
-								<option value="1">0</option>
-								<option value="2">1</option>
-								<option value="3"> 2</option>
-								<option value="4">3 or 3+</option>
-							</select>
-						</div>	
-						<div class="section_class_agileits sec-right">
-							<select>
-								<option value="0">Children</option>
-								<option value="1">0</option>
-								<option value="2">1</option>
-								<option value="3"> 2</option>
-								<option value="4">3 or 3+</option>
-							</select>
-						</div>
-						<div class="clear"></div>
-					</div>				
-					<div class="submit">
-						<input type="submit" value="search">
-					</div>  
-				</form>
+			<div class="copyright">
+				
 			</div>
 		</div>
-
-
-	</div>	
-	<!--start-date-piker-->
-	<link rel="stylesheet" href="assets/frontend/css/jquery-ui.css" />
-	<script src="assets/frontend/js/jquery-ui.js"></script>
-	<script>
-		$(function() {
-			$( "#datepicker,#datepicker1" ).datepicker();
-		});
-	</script>
-	<!-- /End-date-piker -->		
+	</div> -->		
 </body>
 </html>
